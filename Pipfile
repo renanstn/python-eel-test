@@ -5,8 +5,10 @@ name = "pypi"
 
 [packages]
 requests = "*"
+eel = "*"
 
 [dev-packages]
+pyinstaller = "*"
 
 [requires]
 python_version = "3.9"
