@@ -1,5 +1,5 @@
 import eel
-from functions import send_data
+from exposed_functions import send_data
 
 
 eel.init('web')

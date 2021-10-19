@@ -1,7 +1,23 @@
+from os.path import exists
 import base64
 import json
 import requests
 import eel
+
+
+@eel.expose
+def save_data(data: dict) -> None:
+    with open("data.json", "w") as file:
+        json.dump(data, file)
+
+
+@eel.expose
+def load_data() -> dict:
+    if not exists("data.json"):
+        return
+    with open("data.json", "r") as file:
+        data = json.load(file)
+        return data
 
 
 @eel.expose
@@ -32,5 +48,6 @@ def send_data(url: str, table: str, query: str, fields: str) -> list:
     if results:
         results = base64.b64decode(results)
         result_str = results.decode("utf-8")
+        print(result_str)
         return json.loads(f'[{result_str}]')
     return []
