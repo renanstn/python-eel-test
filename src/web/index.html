@@ -18,23 +18,22 @@
         </div>
         <form>
             <fieldset>
-                <label for="tibco_url" class="form-label">Tibco URL</label><br>
-                <input type="text" name="tibco_url" id="tibco_url" class="form-control" autofocus>
+                <label for="tibco_url" class="form-label">Tibco URL</label>
+                <div class="input-group">
+                    <input type="text" name="tibco_url" id="tibco_url" class="form-control" autofocus>
+                    <span class="input-group-text">/snow/genericQuery</span>
+                </div>
                 <br>
-                <label for="table">Table</label><br>
+                <label for="table">Table</label>
                 <input type="text" name="table" id="table" class="form-control">
                 <br>
-                <label for="query" class="form-label">Query</label><br>
+                <label for="query" class="form-label">Query</label>
                 <input type="text" name="query" id="query" class="form-control">
                 <br>
-                <label for="fields" class="form-label">Fields</label><br>
+                <label for="fields" class="form-label">Fields</label>
                 <textarea name="fields" id="fields" cols="30" rows="10" class="form-control"></textarea>
                 <br>
                 <button id="send" class="btn btn-primary">Send</button>
-            </fieldset>
-            <fieldset>
-                <label for="result" class="form-label">Result</label><br>
-                <textarea name="result" id="result" cols="30" rows="10" class="form-control"></textarea>
             </fieldset>
         </form>
     </div>
