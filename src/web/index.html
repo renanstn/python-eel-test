@@ -4,34 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Servicenow test</title>
 </head>
+
 <body>
-    <h1>Servicenow query test</h1>
-    <form>
-        <fieldset>
-            <label for="tibco_url">Tibco URL</label><br>
-            <input type="text" name="tibco_url" id="tibco_url">
-            <br>
-            <label for="table">Table</label><br>
-            <input type="text" name="table" id="table">
-            <br>
-            <label for="query">Query</label><br>
-            <input type="text" name="query" id="query">
-            <br>
-            <label for="fields">Fields</label><br>
-            <textarea name="fields" id="fields" cols="30" rows="10"></textarea>
-            <br>
-            <button id="send">Send</button>
-        </fieldset>
-        <fieldset>
-            <label for="result">Result</label><br>
-            <textarea name="result" id="result" cols="30" rows="10"></textarea>
-        </fieldset>
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Servicenow query test</h1>
+            </div>
+        </div>
+        <form>
+            <fieldset>
+                <label for="tibco_url" class="form-label">Tibco URL</label><br>
+                <input type="text" name="tibco_url" id="tibco_url" class="form-control" autofocus>
+                <br>
+                <label for="table">Table</label><br>
+                <input type="text" name="table" id="table" class="form-control">
+                <br>
+                <label for="query" class="form-label">Query</label><br>
+                <input type="text" name="query" id="query" class="form-control">
+                <br>
+                <label for="fields" class="form-label">Fields</label><br>
+                <textarea name="fields" id="fields" cols="30" rows="10" class="form-control"></textarea>
+                <br>
+                <button id="send" class="btn btn-primary">Send</button>
+            </fieldset>
+            <fieldset>
+                <label for="result" class="form-label">Result</label><br>
+                <textarea name="result" id="result" cols="30" rows="10" class="form-control"></textarea>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
 
 <script type="text/javascript" src="/eel.js"></script>
-<script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="./script.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
