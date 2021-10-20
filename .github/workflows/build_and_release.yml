@@ -38,7 +38,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: app_windows
-        path: .\dist\main.exe
+        path: .\src\dist\main.exe
 
   build-on-linux:
     runs-on: ubuntu-latest
@@ -67,7 +67,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: app_linux
-        path: ./dist/main
+        path: ./src/dist/main
 
   create-release:
     runs-on: ubuntu-latest
