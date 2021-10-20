@@ -5,6 +5,8 @@
 [![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&logoColor=white)](https://bootstrap-vue.org/)
 [![GitHub Actions](https://img.shields.io/badge/githubactions-%232671E5.svg?style=flat&logo=githubactions&logoColor=white)](https://docs.github.com/en/actions)
 
+Pequeno app feito para uso pessoal no trabalho, e para estudar a lib eel, que permite criar pequenos apps desktop, de maneira muito parecida com o Electron.
+
 # Stack
 - [eel](https://github.com/ChrisKnott/Eel)
 - [Bootstrap](https://getbootstrap.com/)
