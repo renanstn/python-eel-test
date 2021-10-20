@@ -7,6 +7,8 @@
 
 Pequeno app feito para uso pessoal no trabalho, e para estudar a lib eel, que permite criar pequenos apps desktop, de maneira muito parecida com o Electron.
 
+Este repositório utiliza o `Github Actions` para buildar o app e gerar releases automáticas para Windows e Linux, a cada commit na branch `main` 😎
+
 # Stack
 - [eel](https://github.com/ChrisKnott/Eel)
 - [Bootstrap](https://getbootstrap.com/)
