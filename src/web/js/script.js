@@ -6,7 +6,15 @@ function send_data(event) {
     const query = document.getElementById("query").value;
     const fields = document.getElementById("fields").value;
 
-    eel.send_data(tibcoUrl, tableName, query, fields);
+    eel.send_data(tibcoUrl, tableName, query, fields)(function(response) {
+        const string_response = JSON.stringify(response);
+        document.getElementById("response-text").value = string_response;
+        change_tab_to_response();
+    });
+};
+
+function change_tab_to_response() {
+    document.getElementById("response-tab").click();
 };
 
 function save_data(event) {
