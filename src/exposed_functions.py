@@ -49,6 +49,5 @@ def send_data(url: str, table: str, query: str, fields: str) -> list:
     if results:
         results = base64.b64decode(results)
         result_str = results.decode("utf-8")
-        print(result_str)
         return json.loads(f'[{result_str}]')
     return []
