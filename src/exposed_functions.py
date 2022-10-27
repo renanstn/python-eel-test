@@ -1,7 +1,8 @@
-from os.path import exists
 import base64
 import json
+from os.path import exists
 import requests
+
 import eel
 
 
