@@ -34,7 +34,7 @@ def send_data(url: str, table: str, query: str, fields: str) -> list:
         'sysparam_fields': request_fields,
         'sysparam_display_value': True,
         'sysparam_exclude_reference_link': True,
-        'sysparam_limit': 100,
+        'sysparam_limit': 5000,
         'sysparam_offset': 0,
         'sysparam_query': query
     }
