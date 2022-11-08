@@ -1,9 +1,13 @@
 import base64
 import json
 from os.path import exists
-import requests
+import urllib3
 
+import requests
 import eel
+
+
+urllib3.disable_warnings()
 
 
 @eel.expose
