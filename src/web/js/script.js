@@ -10,7 +10,7 @@ function send_data(event) {
   const fields = document.getElementById("fields").value;
 
   eel.send_data(tibcoUrl, tableName, query, fields)(function(response) {
-    const string_response = JSON.stringify(response, null, 2);
+    const string_response = JSON.stringify(response, null, 4);
     document.getElementById("response-text").value = string_response;
     change_tab_to_response();
     document.getElementById("loading-icon").style.display = "none";
